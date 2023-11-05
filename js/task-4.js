@@ -33,7 +33,7 @@ function getShippingCost(country) {
       message = `Shipping to ${country} will cost ${cost} credits`;
       break;
     default:
-      message = 'Sorry, there is no delivery to your country';
+      message = 'Sorry, there is no delivery to your country'; // якщо программа не знаходить відповідної країни, то повертається повідомлення
   }
   return message;
 }
